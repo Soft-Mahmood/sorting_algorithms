@@ -1,7 +1,6 @@
 #include "sort.h"
 #include <stdlib.h>
 /**
-**
  * exchange_int - Which is used to exhange the integers
  * @xy: A pointer to the first integer to swap
  * @yp: A pointer to the second integer to swap
@@ -17,24 +16,26 @@ int temp = *xy;
 *yp = temp;
 }
 /**
- * Code description: Prints the array after each swap
- * bubble_sort - it sorts an array of integers in ascending order
- * @array: An array of integers to be sorted
- * @size: Which is the size of the array
-*/
+ * bubble_sort - Sorts an array of integers in ascending order.
+ * @array: An array of integers to be sorted.
+ * @size: The size of the array.
+ *
+ * Description: This function sorts the input array in-place.
+ * It compares adjacent elements and swaps them
+ */
 void bubble_sort(int *array, size_t size)
 {
 size_t x, y;
 int temp;
 for (x = 0; x < size - 1; x++)
 {
-for(y = 0; y < size - 1 - x; y++)
+for (y = 0; y < size - 1 - x; y++)
 {
 if (array[y] > array[y + 1])
 {
 temp = array[y];
-array[y] = array[y+1];
-array[y+1] = temp;
+array[y] = array[y + 1];
+array[y + 1] = temp;
 }
 }
 }
