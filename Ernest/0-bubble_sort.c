@@ -25,14 +25,14 @@ exchange_int(&array[x], &array[y+1]);
  * exchange_int - Which is used to exhange the integers
  * @xy: A pointer to the first integer to swap
  * @yp: A pointer to the second integer to swap
-*
-**Entry of the helper function*
+ **/
+/**Entry of the helper function**/
 void exchange_int(int *xy, int *yp)
 {
-**Creates a temp variable*
+/**Creates a temp variable**/
 int temp = *xy;
-*Updates the value pointed to by xy*
+/**Updates the value pointed to by xy**/
 *xy = *yp;
-*Updates the value pointed to by yp*
+/**Updates the value pointed to by yp**/
 *yp = temp;
-}**/
+}
