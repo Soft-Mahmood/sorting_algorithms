@@ -40,5 +40,7 @@ void bubble_sort(int *array, size_t size);
 int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right);
 void quick_sort(int *array, size_t size);
+int maximum(int *array, int size);
+void counting_sort(int *array, size_t size);
 
 #endif
